@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@1,200&family=Fira+Sans:ital,wght@1,500&family=Oswald:wght@200;400;500&family=Roboto:ital,wght@0,300;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Contact Us</h1></header>
+    <main>
+      <form action="/" method="GET">
+        <h2>How can we help you?</h2>
+        <section>
+          <ul>
+            <li>
+              <label for="user-name">Your name</label>
+              <input type="text" name="username" id="user-name" />
+            </li>
+            <li>
+              <label for="email-address">Your E-mail address</label>
+              <input type="email" name="email" id="email-address" />
+            </li>
+            <li>
+              <label for="phone-number">Your phone number</label>
+              <input type="number" name="phonenumber" id="phone-number" />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="usermessage"> Your message</label>
+          <textarea name="user-message" id="usermessage"></textarea>
+        </section>
+
+        <section>
+          <label for="FindUs">How did you find us?</label>
+          <select name="Findus" id="">
+            <option value="Web Search"></option>
+            <option value="YouTube"></option>
+            <option value="Advertisment"></option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply you?</h2>
+
+          <ul>
+            <li class="form-control-inline">
+              <input type="radio" name="reply" id="call" value="phone" />
+              <label for="call">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="reply" id="email" value="email" />
+              <label for="call">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="reply" id="null" value="phone" />
+              <label for="null">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+            <div class="form-control-inline">
+                <input type="checkbox" name="Accept Terms" id="accept-terms" />
+              
+              <label for="accept-terms">Accept terms</label>
+              </div>
+        </section>
+    
+        <section>
+        <button type="reset">Clear</button>
+        <button>Submit</button>
+        </section>
+      
+      </form>
+    </main>
+  </body>
+</html>
